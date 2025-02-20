@@ -1,0 +1,52 @@
+run:
+  timeout: 2m
+
+linters:
+  disable-all: true
+  enable:
+    - dupl
+    - errcheck
+    - errname
+    - errorlint
+    - funlen
+    - gci
+    - goconst
+    - gocritic
+    - gocyclo
+    - gofmt
+    - goimports
+    - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    - lll
+    - misspell
+    - nolintlint
+    - prealloc
+    - reassign
+    - revive
+    - staticcheck
+    - stylecheck
+    - thelper
+    - tparallel
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - whitespace
+
+linters-settings:
+  thelper:
+    test:
+      begin: false
+
+issues:
+  exclude-rules:
+    - path: _test\.go
+      linters:
+        - unparam
+        - funlen
+    - path: internal/testtypes
+      linters:
+        - revive
+        - stylecheck
