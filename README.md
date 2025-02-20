@@ -1,4 +1,5 @@
 # aerospike-mapper-go
+[![Build](https://github.com/reugn/aerospike-mapper-go/actions/workflows/build.yml/badge.svg)](https://github.com/reugn/aerospike-mapper-go/actions/workflows/build.yml)
 
 This library provides a mechanism to map Go structs to [Aerospike](https://aerospike.com) records and conversely,
 using struct field tags to define the mapping.
